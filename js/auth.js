@@ -8,7 +8,8 @@ if (!isAuthenticated() && document.location.pathname !== '/login.html') {
 }
 
 function isAuthenticated() {
-    return sessionStorage[AUTH_NAME];
+    return true;
+    //return sessionStorage[AUTH_NAME];
 }
 
 function authenticate(username, password) {
