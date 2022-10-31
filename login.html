@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+    <!-- Authentication -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/auth.js"></script>
+
+    <style>
+        .container {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -50px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .container label {
+            width: 200px;
+            font-size: 18px;
+        }
+
+        .container input {
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        #validation {
+            white-space: nowrap;
+            font-size: 24px;
+            color: red;
+        }
+
+    </style>
+
+    <script>
+        function signIn() {
+            if (!authenticate($('#username').val(), $('#password').val())) {
+                $('#validation').show();
+            };
+            return false;
+        }
+    </script>
+
+
+</head>
+
+    <body style="background: url('/media/1920x960/4.jpg') no-repeat; background-size: cover">
+
+    <div class="container">
+        <span id="validation" style="display: none">Invalid username or password</span>
+        <form onsubmit="return signIn()">
+            <label>Username:</label><br/>
+            <input id="username"> <br/>
+
+            <label>Password:</label><br/>
+            <input id="password" type="password"> <br/><br/>
+
+            <input type="submit" value="Sign In"> <br/>
+        </form>
+    </div>
+
+    </body>
+
+</html>
