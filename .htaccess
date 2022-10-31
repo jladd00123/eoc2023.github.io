@@ -1,6 +1,6 @@
 <If "req('Host') = 'www.example.com'">
 AuthType Basic
 AuthName "user and password"
-AuthUserFile /var/www/www.example.com/.htpasswd
+AuthUserFile /https://jladd00123.github.io/eoc2023.github.io/.htpasswd
 require valid-user
 </If>
