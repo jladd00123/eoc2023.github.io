@@ -1,4 +1,6 @@
+<If "req('Host') = 'www.example.com'">
 AuthType Basic
-AuthName "Protected Site"
-AuthUserFile /var/www/hostname/.htpasswd
+AuthName "user and password"
+AuthUserFile /var/www/www.example.com/.htpasswd
 require valid-user
+</If>
