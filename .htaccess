@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Protected Site"
+AuthUserFile /usr/home2/ballardo/.htpasswds/.htpasswd
+require valid-user
