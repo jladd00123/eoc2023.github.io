@@ -1,8 +1,8 @@
 
 var AUTH_NAME = 'authenticated';
 var CONTEXT_PATH = '/eoc2023.github.io';
-var USERNAME = 'admin';
-var PASSWORD = 'admin';
+var USERNAME = 'eoc2023';
+var PASSWORD = 'KnowYourSTATS';
 
 if (!isAuthenticated() && document.location.pathname !== (CONTEXT_PATH + '/login.html')) {
     document.location.href = (CONTEXT_PATH + '/login.html');
